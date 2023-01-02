@@ -1,0 +1,47 @@
+@use "./colors" as *;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: $color-dark-gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#portal-root {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: none;
+
+  .portal-visible & {
+    display: block;
+  }
+}

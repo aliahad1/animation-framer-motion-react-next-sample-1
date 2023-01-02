@@ -1,0 +1,30 @@
+.titleWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content {
+  position: sticky;
+  top: 18%;
+}
+
+.galleryWrapper {
+  overflow: hidden;
+}
+
+.cardsWrapper {
+  display: flex;
+  width: max-content;
+  gap: 5rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: #000;
+  transition: color 300ms ease-in-out;
+}

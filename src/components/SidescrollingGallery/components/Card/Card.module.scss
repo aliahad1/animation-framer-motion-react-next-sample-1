@@ -1,0 +1,19 @@
+.card {
+  width: 24rem;
+  height: 32.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  position: relative;
+  padding: 1rem;
+  color: #fff;
+  font-size: 9rem;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+  font-family: "Lora", serif;
+}
