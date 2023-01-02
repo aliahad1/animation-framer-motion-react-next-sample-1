@@ -6,7 +6,13 @@ import Head from "next/head";
 import Layout from "../components/Layout/Layout";
 import Footer from "../components/Footer/Footer";
 
-const AnimatedTextCharacter = ({ text }) => {
+interface AnimatedTextCharacterProps {
+  text: string;
+}
+
+const AnimatedTextCharacter: React.FC<AnimatedTextCharacterProps> = ({
+  text,
+}) => {
   // splitting text into letters
   const letters = Array.from(text);
 
